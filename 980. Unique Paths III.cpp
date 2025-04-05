@@ -1,5 +1,5 @@
 class Solution {
-public:
+private:
   int ans = 0, start_x, start_y, finish_x, finish_y, cnt_zero = 0, n, m;
   const int dx[4] = {0, 0, 1, -1}, dy[4] = {1, -1, 0, 0};
   vector<vector<bool>> is_visited;
@@ -40,6 +40,7 @@ public:
     return ret;
   }
 
+public:
   int uniquePathsIII(vector<vector<int>> &grid) {
     n = grid.size(), m = grid[0].size();
     is_visited.assign(n, vector<bool>(m, false));
